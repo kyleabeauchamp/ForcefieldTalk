@@ -102,7 +102,38 @@ $$\chi^2 = \sum_i \frac{1}{n} \frac{(x_k^{expt} - x_k^{model})^2}{\sigma_k^2}$$
 ---
 
 <center>
+<img width=850 src=figures/schwalbe_title.png /> 
+
+</center>
+
+- Chemical shift and scalar couplings
+- Studied ALA2 through ALA8
+- PPII structure dominates
+
+---
+
+<center>
+<img width=850 src=figures/schwalbe_title.png /> 
+
+<img width=450 src=figures/schwalbe_figure.png />
+
+</center>
+
+---
+
+<center>
 <img width=850 src=figures/best_hummer_title.png />
+</center>
+
+- Evaluate scalar couplings (3J HN HA) on ALA5
+- Modern force fields too helical
+- ALA5 has *some* helical content
+
+---
+
+<center>
+<img width=850 src=figures/best_hummer_title.png />
+
 
 
 <img height=450 src=figures/best_triangles.png />
@@ -132,3 +163,10 @@ $$\chi^2 = \sum_i \frac{1}{n} \frac{(x_k^{expt} - x_k^{model})^2}{\sigma_k^2}$$
 <img height=400 src=figures/ChiSquared_All.png />
 </center>
 
+
+---
+title: Takeaways
+
+- NMR probes ensemble average properties with atomic resolution
+- MD and simple models yield semi-quantitative predictions of NMR observables (CS, JC, NOE)
+- Recent forcefields are (by design) more consistent with NMR measurements
