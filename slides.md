@@ -1,8 +1,4 @@
 ---
-title: Are Protein Forcefields Getting Better?
-
-
----
 title: Why Molecular Dynamics?
 
 - Predict the outcome of biophysical measurements
