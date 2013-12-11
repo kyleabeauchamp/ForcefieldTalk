@@ -62,6 +62,20 @@ URL: https://code.google.com/p/io-2012-slides
 <slide  >
   
     <hgroup>
+      <h2>The Atomistic Basis of Disease</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>...EVKMD<b><font color="black">A</font></b>EFRHDS...  ...EVKMD<b><font color="black">T</font></b>EFRHDS...  ...EVKMD<b><font color="black">V</font></b>EFRHDS...</p>
+<p><img width=300 src=figures/alanine.png />  <img width=300 src=figures/threonine.png />   <img width=300 src=figures/valine.png /></p>
+<footer class="source"> 
+Jonsson, 2012  A673 T673 V673
+</footer></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
       <h2>Why Molecular Dynamics?</h2>
       <h3></h3>
     </hgroup>
@@ -115,7 +129,7 @@ http://www.acornnmr.com/codeine/noesy.htms
     <article ><ul>
 <li>Sensitive to local environment</li>
 <li>Easy to obtain</li>
-<li>Semiquantitative prediction based on machine-learning and physical approaches</li>
+<li>Semiquantitative prediction: PPM, ShiftX2, Sparta+</li>
 </ul>
 <p><center>
 <img height=300 src=figures/1D_NMR.png />
@@ -163,6 +177,22 @@ Bax, 2010.  Wishart, 2011.  Bruschweiler, 2012.
 <slide  >
   
     <hgroup>
+      <h2>NMR Observables: Scalar Couplings</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>Uncertainties of ~0.4 Hz for $^3J H_N H_\alpha $</li>
+<li>Poor models for other classes of JC</li>
+</ul>
+<p><center>
+<img height=425 src=figures/karplus_ala3.png />
+</center></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
       <h2>NMR Observables: NOE</h2>
       <h3></h3>
     </hgroup>
@@ -186,6 +216,7 @@ Bax, 2010.  Wishart, 2011.  Bruschweiler, 2012.
     <article ><ul>
 <li>Complex modulation by dynamics</li>
 <li>Typically treated non-quantitatively</li>
+<li>Weak, medium, or strong restraints on a single structure</li>
 </ul></article>
  
 </slide>
@@ -196,7 +227,7 @@ Bax, 2010.  Wishart, 2011.  Bruschweiler, 2012.
       <h2>A Brief History of NMR-based FF development</h2>
       <h3></h3>
     </hgroup>
-    <article ><p>$$\chi^2 = \sum_i \frac{1}{n} \frac{(x_k^{expt} - x_k^{model})^2}{\sigma_k^2}$$</p></article>
+    <article ><p>$$\chi^2 = \frac{1}{n} \sum_k  \frac{(x_k^{expt} - x_k^{model})^2}{\sigma_k^2}$$</p></article>
  
 </slide>
 
@@ -240,7 +271,7 @@ Bax, 2010.  Wishart, 2011.  Bruschweiler, 2012.
 <img width=850 src=figures/best_hummer_title.png />
 </center></p>
 <ul>
-<li>Evaluate scalar couplings (3J HN HA) on ALA5</li>
+<li>Evaluate scalar couplings ($^3J H_N H_\alpha $) on ALA5</li>
 <li>Modern force fields too helical</li>
 <li>ALA5 has <em>some</em> helical content</li>
 </ul></article>
@@ -268,8 +299,41 @@ Bax, 2010.  Wishart, 2011.  Bruschweiler, 2012.
     </hgroup>
     <article ><p><center>
 <img width=850 src=figures/gordon_title.png /></p>
+<p></center></p>
+<ul>
+<li>Idea: adjust dihedral terms to better fit JC data</li>
+<li>Similar work also done by R. Best (ff99sb<em>, ff03</em>), Bruschweiler</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><center>
+<img width=850 src=figures/gordon_title.png /></p>
 <p><img height=400 src=figures/gordon_rama.png />
 </center></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><center>
+<img width=850 src=figures/shaw_title.png />
+</center></p>
+<ul>
+<li>Folded proteins: GB3, Ubiquitin</li>
+<li>$\alpha$ and $\beta$ peptides: AAQAA, CLN025</li>
+<li>Folding / Unfolding : HP35, WW FiP35</li>
+</ul></article>
  
 </slide>
 
@@ -293,7 +357,25 @@ Bax, 2010.  Wishart, 2011.  Bruschweiler, 2012.
       <h3></h3>
     </hgroup>
     <article ><p><center>
-<img width=850 src=figures/kb_title.png /></p>
+<img width=850 src=figures/kb_title.png />
+</center></p>
+<ul>
+<li>11 force fields, 5 water models</li>
+<li>Ace-X-NME, homotripeptides, tetrapeptides, ubiquitin</li>
+<li>Scalar couplings, chemical shifts</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><center>
+<img width=850 src=figures/kb_title.png />
+</center></p>
 <p><img height=400 src=figures/ChiSquared_All.png />
 </center></p></article>
  
@@ -309,6 +391,19 @@ Bax, 2010.  Wishart, 2011.  Bruschweiler, 2012.
 <li>NMR probes ensemble average properties with atomic resolution</li>
 <li>MD and simple models yield semi-quantitative predictions of NMR observables (CS, JC, NOE)</li>
 <li>Recent forcefields are (by design) more consistent with NMR measurements</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Future Work</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>Beyond "manual" adjustment of FFs: Forcebalance, Bayesian FFs?</li>
+<li>Using experiments to fit more than just dihedrals</li>
 </ul></article>
  
 </slide>
