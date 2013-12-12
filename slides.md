@@ -10,10 +10,10 @@ Jonsson, 2012  A673 T673 V673
 </footer>
 
 ---
-title: Why Molecular Dynamics?
+title: Molecular Dynamics: Biophysical Models at the nanoscale
 
-- Predict the outcome of biophysical measurements
 - Generate atomic-scale hypotheses
+- Predict the outcome of biophysical measurements
 - Interpret experimental observables 
 
 
@@ -79,9 +79,22 @@ Bax, 2010.  Wishart, 2011.  Bruschweiler, 2012.
 </footer>
 
 ---
+title: Chemical Shifts: Semiquantitative FF Evaluation
+class: segue dark nobackground
+
+---
 title: NMR Observables: Scalar Couplings
 
 - Probe pairs of atoms separated by 1-3 bonds
+
+<center>
+<img height=550 src=figures/ALA3.png />
+</center>
+
+---
+title: NMR Observables: Scalar Couplings
+
+
 - Sensitive to geometry via Karplus curve
 
 <center>
