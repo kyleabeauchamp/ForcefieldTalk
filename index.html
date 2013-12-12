@@ -82,7 +82,7 @@ Jonsson, 2012  A673 T673 V673
     <article ><ul>
 <li>Predict the outcome of biophysical measurements</li>
 <li>Generate atomic-scale hypotheses</li>
-<li>Interpret experimental obervables </li>
+<li>Interpret experimental observables </li>
 </ul></article>
  
 </slide>
@@ -100,6 +100,16 @@ http://newh2o.com/2012/11/02/gemstones-elephant-in-the-room-free-project/
  
 </slide>
 
+<slide class="segue dark nobackground" >
+  
+    <!-- <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside> -->
+    <hgroup class="auto-fadein">
+      <h2>How to Evaluate and Refine Forcefields with NMR</h2>
+      <h3></h3>
+    </hgroup>
+  
+</slide>
+
 <slide  >
   
     <hgroup>
@@ -109,7 +119,7 @@ http://newh2o.com/2012/11/02/gemstones-elephant-in-the-room-free-project/
     <article ><ul>
 <li>Probe individual or pairs of atoms</li>
 <li>Solution phase, ensemble averages</li>
-<li>Direct map from simulation to observable</li>
+<li>Direct geometric map from simulation to observable</li>
 </ul>
 <p><center>
 <img height=350 src=figures/noesy.jpg />
@@ -147,7 +157,8 @@ http://publications.nigms.nih.gov/structlife/chapter3.html
       <h3></h3>
     </hgroup>
     <article ><ul>
-<li>Complex predictors with unknown error bars</li>
+<li>Complex machine learning models</li>
+<li>Unknown error bars</li>
 </ul>
 <p><center>
 <img height=450 src=figures/shiftx2_features.png />
@@ -185,7 +196,7 @@ Bax, 2010.  Wishart, 2011.  Bruschweiler, 2012.
 <li>Poor models for other classes of JC</li>
 </ul>
 <p><center>
-<img height=425 src=figures/karplus_ala3.png />
+<img height=400 src=figures/wangbax1996.png />
 </center></p></article>
  
 </slide>
@@ -198,7 +209,7 @@ Bax, 2010.  Wishart, 2011.  Bruschweiler, 2012.
     </hgroup>
     <article ><ul>
 <li>Probe pairs of nonbonded atoms</li>
-<li>Sensitive to $\langle r^{-\frac{1}{6}}\rangle$</li>
+<li>Sensitive to $\langle r^{-\frac{1}{k}}\rangle$ for $k = 3, 6$</li>
 <li>Key experiment in NMR structure determination</li>
 </ul>
 <p><center>
@@ -217,6 +228,23 @@ Bax, 2010.  Wishart, 2011.  Bruschweiler, 2012.
 <li>Complex modulation by dynamics</li>
 <li>Typically treated non-quantitatively</li>
 <li>Weak, medium, or strong restraints on a single structure</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>NMR Non-observable: Structure</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><center>
+<img width=300 src=figures/hp35.png /> 
+</center></p>
+<ul>
+<li>Assumes single structure, not equilibrium</li>
+<li>Discards quantitative experimental measurements</li>
+<li>Important QUALITATIVE test</li>
 </ul></article>
  
 </slide>
@@ -384,6 +412,44 @@ Bax, 2010.  Wishart, 2011.  Bruschweiler, 2012.
 <slide  >
   
     <hgroup>
+      <h2>$\chi^2$ robust to system sizes</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><center>
+<img height=230 src=figures/ChiSquared_1UBQ.png />
+<img height=230 src=figures/ChiSquared_Tripeptides.png /></p>
+<p><img height=230 src=figures/ChiSquared_Dipeptides.png /></p>
+<p></center></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Scalar Couplings</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><center>
+<img height=500 src=figures/3JHNHA.png />
+</center></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Dipeptide Populations</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><center>
+<img height=500 src=figures/PopulationTriangle.png />
+</center></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
       <h2>Takeaways</h2>
       <h3></h3>
     </hgroup>
@@ -405,6 +471,18 @@ Bax, 2010.  Wishart, 2011.  Bruschweiler, 2012.
 <li>Beyond "manual" adjustment of FFs: Forcebalance, Bayesian FFs?</li>
 <li>Using experiments to fit more than just dihedrals</li>
 </ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>How NOE Works (1)</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>$C(t) = \langle \frac{P_2(\mathbf{u}(0) \cdot \mathbf{u}(t))}{r^3(0)r^3(t)} \rangle$</p>
+<p>$C(0) = \langle r^{-6} \rangle$</p>
+<p>$C(\infty) \approx S^2 \langle r^{-3} \rangle^2$</p></article>
  
 </slide>
 

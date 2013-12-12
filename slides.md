@@ -14,7 +14,7 @@ title: Why Molecular Dynamics?
 
 - Predict the outcome of biophysical measurements
 - Generate atomic-scale hypotheses
-- Interpret experimental obervables 
+- Interpret experimental observables 
 
 
 ---
@@ -28,11 +28,16 @@ http://newh2o.com/2012/11/02/gemstones-elephant-in-the-room-free-project/
 
 
 ---
+title: How to Evaluate and Refine Forcefields with NMR
+class: segue dark nobackground
+
+
+---
 title: Why NMR?
 
 - Probe individual or pairs of atoms
 - Solution phase, ensemble averages
-- Direct map from simulation to observable
+- Direct geometric map from simulation to observable
 
 <center>
 <img height=350 src=figures/noesy.jpg />
@@ -61,7 +66,8 @@ http://publications.nigms.nih.gov/structlife/chapter3.html
 ---
 title: NMR Observables: Chemical Shifts
 
-- Complex predictors with unknown error bars
+- Complex machine learning models
+- Unknown error bars
 
 <center>
 <img height=450 src=figures/shiftx2_features.png />
@@ -89,14 +95,14 @@ title: NMR Observables: Scalar Couplings
 - Poor models for other classes of JC
 
 <center>
-<img height=425 src=figures/karplus_ala3.png />
+<img height=400 src=figures/wangbax1996.png />
 </center>
 
 ---
 title: NMR Observables: NOE
 
 - Probe pairs of nonbonded atoms
-- Sensitive to $\langle r^{-\frac{1}{6}}\rangle$
+- Sensitive to $\langle r^{-\frac{1}{k}}\rangle$ for $k = 3, 6$
 - Key experiment in NMR structure determination
 
 <center>
@@ -110,6 +116,19 @@ title: NMR Observables: NOE
 - Complex modulation by dynamics
 - Typically treated non-quantitatively
 - Weak, medium, or strong restraints on a single structure
+
+
+---
+title: NMR Non-observable: Structure
+
+
+<center>
+<img width=300 src=figures/hp35.png /> 
+</center>
+
+- Assumes single structure, not equilibrium
+- Discards quantitative experimental measurements
+- Important QUALITATIVE test
 
 
 ---
@@ -209,6 +228,31 @@ $$\chi^2 = \frac{1}{n} \sum_k  \frac{(x_k^{expt} - x_k^{model})^2}{\sigma_k^2}$$
 
 
 ---
+title: $\chi^2$ robust to system sizes
+
+<center>
+<img height=230 src=figures/ChiSquared_1UBQ.png />
+<img height=230 src=figures/ChiSquared_Tripeptides.png />
+
+<img height=230 src=figures/ChiSquared_Dipeptides.png />
+
+</center>
+
+---
+title: Scalar Couplings
+
+<center>
+<img height=500 src=figures/3JHNHA.png />
+</center>
+
+---
+title: Dipeptide Populations
+
+<center>
+<img height=500 src=figures/PopulationTriangle.png />
+</center>
+
+---
 title: Takeaways
 
 - NMR probes ensemble average properties with atomic resolution
@@ -221,3 +265,13 @@ title: Future Work
 - Beyond "manual" adjustment of FFs: Forcebalance, Bayesian FFs?
 - Using experiments to fit more than just dihedrals
 
+
+
+---
+title: How NOE Works (1)
+
+$C(t) = \langle \frac{P_2(\mathbf{u}(0) \cdot \mathbf{u}(t))}{r^3(0)r^3(t)} \rangle$
+
+$C(0) = \langle r^{-6} \rangle$
+
+$C(\infty) \approx S^2 \langle r^{-3} \rangle^2$
