@@ -281,19 +281,6 @@ title: $\chi^2$ robust to system sizes
 
 </center>
 
----
-title: Scalar Couplings
-
-<center>
-<img height=500 src=figures/3JHNHA.png />
-</center>
-
----
-title: Dipeptide Populations
-
-<center>
-<img height=500 src=figures/PopulationTriangle.png />
-</center>
 
 ---
 title: Takeaways
@@ -340,3 +327,17 @@ $J(\omega) = \mathcal{F}[C(t)]$
 title: How NOE Works (2)
 
 Relaxation matrix:
+
+---
+title: Scalar Couplings
+
+<center>
+<img height=500 src=figures/3JHNHA.png />
+</center>
+
+---
+title: Dipeptide Populations
+
+<center>
+<img height=500 src=figures/PopulationTriangle.png />
+</center>
