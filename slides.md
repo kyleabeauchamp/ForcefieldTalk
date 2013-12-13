@@ -307,7 +307,21 @@ title: Future Work
 
 - Beyond "manual" adjustment of FFs: Forcebalance, Bayesian FFs?
 - Using experiments to fit more than just dihedrals
+- Designing experiments to improve force fields
 
+---
+title: Related work
+
+- Combining MD and experiment to infer conformational ensembles (with TJ Lane and Christian Schwantes; based on work by John and Pitera)
+- Improved Karplus relations (with TJ Lane)
+
+---
+title: Towards quantitative structural biology
+subtitle: Going beyond static NOEs
+
+- MD$\rightarrow$Correlation function$\rightarrow$Spectral Density$\rightarrow$Relaxation Matrix$\rightarrow$NOE
+- What is ultimate information content of a NOE experiment?
+- Overhauser: a toolbox for quantitative NOE spectroscopy
 
 
 ---
@@ -318,3 +332,11 @@ $C(t) = \langle \frac{P_2(\mathbf{u}(0) \cdot \mathbf{u}(t))}{r^3(0)r^3(t)} \ran
 $C(0) = \langle r^{-6} \rangle$
 
 $C(\infty) \approx S^2 \langle r^{-3} \rangle^2$
+
+$J(\omega) = \mathcal{F}[C(t)]$
+
+
+---
+title: How NOE Works (2)
+
+Relaxation matrix:
