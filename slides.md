@@ -123,6 +123,7 @@ title: Conclusion: Structure is an important sanity check, but a qualitative, de
 title: NMR Observables: Scalar Couplings
 
 - Probe pairs of atoms separated by 1-3 bonds
+- E.g. $^3J H_N H_\alpha $
 
 <center>
 <img height=550 src=figures/ALA3.png />
