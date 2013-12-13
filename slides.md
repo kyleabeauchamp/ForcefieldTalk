@@ -44,7 +44,7 @@ title: Why NMR?
 </center>
 
 <footer class="source"> 
-http://www.acornnmr.com/codeine/noesy.htms
+http://www.acornnmr.com/
 </footer>
 
 ---
