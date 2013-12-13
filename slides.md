@@ -79,8 +79,45 @@ Bax, 2010.  Wishart, 2011.  Bruschweiler, 2012.
 </footer>
 
 ---
-title: Chemical Shifts: Semiquantitative FF Evaluation
-class: segue dark nobackground
+title: Conclusion: Chemical Shifts are great for semiquantitative FF Evaluation
+
+
+---
+title: NMR Observables: NOE
+
+- Probe pairs of nonbonded atoms
+- Sensitive to $\langle r^{-\frac{1}{k}}\rangle$ for $k = 3, 6$
+- Key experiment in NMR structure determination
+
+<center>
+<img height=350 src=figures/noesy.jpg />
+</center>
+
+---
+title: NMR Observables: NOE
+
+
+- Complex modulation by dynamics
+- Typically treated non-quantitatively
+- Weak, medium, or strong restraints on a single structure
+
+---
+title: Conclusion: NOEs are information rich but non-quantitative under current treatments
+
+
+---
+title: NMR Observables: Structure
+
+
+<center>
+<img width=300 src=figures/hp35.png /> 
+</center>
+
+- Assumes single structure, not equilibrium
+- Discards quantitative experimental measurements
+
+---
+title: Conclusion: Structure is an important sanity check, but a qualitative, derived quantity
 
 ---
 title: NMR Observables: Scalar Couplings
@@ -112,36 +149,8 @@ title: NMR Observables: Scalar Couplings
 </center>
 
 ---
-title: NMR Observables: NOE
+title: Conclusion: JCs are currently the most direct comparisons available for FF evaluation
 
-- Probe pairs of nonbonded atoms
-- Sensitive to $\langle r^{-\frac{1}{k}}\rangle$ for $k = 3, 6$
-- Key experiment in NMR structure determination
-
-<center>
-<img height=350 src=figures/noesy.jpg />
-</center>
-
----
-title: NMR Observables: NOE
-
-
-- Complex modulation by dynamics
-- Typically treated non-quantitatively
-- Weak, medium, or strong restraints on a single structure
-
-
----
-title: NMR Non-observable: Structure
-
-
-<center>
-<img width=300 src=figures/hp35.png /> 
-</center>
-
-- Assumes single structure, not equilibrium
-- Discards quantitative experimental measurements
-- Important QUALITATIVE test
 
 
 ---
@@ -156,18 +165,39 @@ $$\chi^2 = \frac{1}{n} \sum_k  \frac{(x_k^{expt} - x_k^{model})^2}{\sigma_k^2}$$
 
 </center>
 
-- Chemical shift and scalar couplings
 - Studied ALA2 through ALA8
-- PPII structure dominates
+
+<center>
+<img height=350 src=figures/ALA3.png />
+</center>
+
 
 ---
 
 <center>
 <img width=850 src=figures/schwalbe_title.png /> 
+</center>
 
+- Chemical shift and scalar couplings
+
+<center>
 <img width=450 src=figures/schwalbe_figure.png />
 
 </center>
+
+---
+
+<center>
+<img width=850 src=figures/schwalbe_title.png /> 
+</center>
+
+- PPII conformation dominates short ALA peptides
+
+<center>
+<img width=650 src=figures/schwalbe_chi2.png />
+
+</center>
+
 
 ---
 
