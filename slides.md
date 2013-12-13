@@ -132,6 +132,16 @@ title: NMR Observables: Scalar Couplings
 ---
 title: NMR Observables: Scalar Couplings
 
+- Uncertainties of ~0.4 Hz for $^3J H_N H_\alpha $
+- Poor models for other classes of JC
+
+<center>
+<img height=400 src=figures/wangbax1996.png />
+</center>
+
+---
+title: NMR Observables: Scalar Couplings
+
 
 - Sensitive to geometry via Karplus curve
 
@@ -139,15 +149,7 @@ title: NMR Observables: Scalar Couplings
 <img height=425 src=figures/karplus_ala3.png />
 </center>
 
----
-title: NMR Observables: Scalar Couplings
 
-- Uncertainties of ~0.4 Hz for $^3J H_N H_\alpha $
-- Poor models for other classes of JC
-
-<center>
-<img height=400 src=figures/wangbax1996.png />
-</center>
 
 ---
 title: Conclusion: JCs are currently the most direct comparisons available for FF evaluation
@@ -227,7 +229,7 @@ $$\chi^2 = \frac{1}{n} \sum_k  \frac{(x_k^{expt} - x_k^{model})^2}{\sigma_k^2}$$
 </center>
 
 - Idea: adjust dihedral terms to better fit JC data
-- Similar work also done by R. Best (ff99sb*, ff03*), Bruschweiler
+- Similar work also done by R. Best, R. Bruschweiler
 
 ---
 <center>
@@ -272,7 +274,7 @@ $$\chi^2 = \frac{1}{n} \sum_k  \frac{(x_k^{expt} - x_k^{model})^2}{\sigma_k^2}$$
 
 
 ---
-title: $\chi^2$ robust to system sizes
+title: $\chi^2$ robust to choice of model system
 
 <center>
 <img height=230 src=figures/ChiSquared_1UBQ.png />
@@ -284,11 +286,21 @@ title: $\chi^2$ robust to system sizes
 
 
 ---
-title: Takeaways
+title: Towards quantitative structural biology
+subtitle: Going beyond static NOEs
+
+- MD$\rightarrow$Correlation function$\rightarrow$Spectral Density$\rightarrow$Relaxation Matrix$\rightarrow$NOE
+- What is ultimate information content of a NOE experiment?
+- Overhauser: a toolbox for quantitative NOE spectroscopy
+
+---
+title: Conclusions
 
 - NMR probes ensemble average properties with atomic resolution
 - MD and simple models yield semi-quantitative predictions of NMR observables (CS, JC, NOE)
 - Recent forcefields are (by design) more consistent with NMR measurements
+
+
 
 ---
 title: Future Work
@@ -303,13 +315,7 @@ title: Related work
 - Combining MD and experiment to infer conformational ensembles (with TJ Lane and Christian Schwantes; based on work by John and Pitera)
 - Improved Karplus relations (with TJ Lane)
 
----
-title: Towards quantitative structural biology
-subtitle: Going beyond static NOEs
 
-- MD$\rightarrow$Correlation function$\rightarrow$Spectral Density$\rightarrow$Relaxation Matrix$\rightarrow$NOE
-- What is ultimate information content of a NOE experiment?
-- Overhauser: a toolbox for quantitative NOE spectroscopy
 
 
 ---
