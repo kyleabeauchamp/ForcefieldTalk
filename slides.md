@@ -126,7 +126,7 @@ title: NMR Observables: Scalar Couplings
 - E.g. $^3J H_N H_\alpha $
 
 <center>
-<img height=550 src=figures/ALA3.png />
+<img height=500 src=figures/ALA3.png />
 </center>
 
 ---
