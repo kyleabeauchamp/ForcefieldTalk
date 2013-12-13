@@ -98,7 +98,7 @@ title: NMR Observables: NOE
 
 
 - Complex modulation by dynamics
-- Typically treated non-quantitatively
+- Typically treated qualitatively
 - Weak, medium, or strong restraints on a single structure
 
 ---
