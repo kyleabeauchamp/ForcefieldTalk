@@ -86,7 +86,7 @@ title: Conclusion: Chemical Shifts are great for semiquantitative FF Evaluation
 title: NMR Observables: NOE
 
 - Probe pairs of nonbonded atoms
-- Sensitive to $\langle r^{-\frac{1}{k}}\rangle$ for $k = 3, 6$
+- Sensitive to $\langle r^{-6}\rangle$
 - Key experiment in NMR structure determination
 
 <center>
